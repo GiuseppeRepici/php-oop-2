@@ -5,8 +5,8 @@ require_once "./models/Game.php";
 require_once "./models/Bunk.php";
 require_once "./models/Food.php";
 
-$dogC = new Category("Cani");
-$catC = new Category("Gatti");
+$dogC = new Category("Cane");
+$catC = new Category("Gatto");
 
 $croccantinicat = new Food("Sterilizzato al salmone", 4 , $catC, 250);
 $croccantinidog = new Food("A base di manzo e salmone", 5 , $dogC, 450);
