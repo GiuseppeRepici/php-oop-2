@@ -1,11 +1,15 @@
 <?php
 
 class Category {
-    protected $name;
+    public $name;
 
     function __construct($_name) {
         $this->name = $_name;
     }
+
+    public function printCategory() {
+        return "{$this->name}";
+      }
 }
 
   

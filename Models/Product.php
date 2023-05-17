@@ -14,4 +14,14 @@ class Product {
     $this->category = $_category;
   }
 
+  public function printName() {
+    return "{$this->name}" ;
+  }
+
+  public function printPrice() {
+    return "{$this->price}" ;
+  }
+
+  
+
 }
