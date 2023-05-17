@@ -7,8 +7,8 @@ class Bunk extends Product {
     public $color;
     public $brand;
 
-    function __construct($_name, $_price,  $_availability , Category $_category, $_color , $_brand) {
-        parent::__construct($_name, $_price,$_availability, $_category);
+    function __construct($_name, $_price, Category $_category, $_color , $_brand) {
+        parent::__construct($_name, $_price, $_category);
         $this->color = $_color;
         $this->brand = $_brand;
       }

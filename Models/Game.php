@@ -7,8 +7,8 @@ class Game extends Product {
     public $type;
     public $brand;
 
-    function __construct($_name, $_price,  $_availability , Category $_category, $_type , $_brand) {
-        parent::__construct($_name, $_price,$_availability, $_category);
+    function __construct($_name, $_price, Category $_category, $_type , $_brand) {
+        parent::__construct($_name, $_price, $_category);
         $this->type = $_type;
         $this->brand = $_brand;
       }
