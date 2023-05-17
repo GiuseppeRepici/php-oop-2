@@ -12,4 +12,21 @@ class Bunk extends Product {
         $this->color = $_color;
         $this->brand = $_brand;
       }
+
+      public function hasBrand(){
+        return true;
+      }
+
+      public function printBrand() {
+        return "{$this->brand}";
+      }
+
+
+      public function hasColor(){
+        return true;
+      }
+
+      public function printColor() {
+        return "{$this->color}";
+      }
 }

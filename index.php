@@ -44,8 +44,21 @@ $products = [
 <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title"><?php echo $product->printName() ?></h5>
-    <h6 class="card-subtitle mb-2 text-body-secondary"><?php echo $product->printCategory() ?></h6>
+    <h6 class="card-subtitle mb-2 text-body-secondary"><?php echo $product->category->printCategory() ?></h6>
     <p class="card-text">Prezzo: <?php echo $product->printPrice() ?></p>
+    <?php if($product->hasCalories()) { ?>
+        <p class="card-text">Calorie: <?php echo $product->printCalories() ?></p>
+    <?php } ?>  
+    <?php if($product->hasBrand()) { ?>
+        <p class="card-text">Marca: <?php echo $product->printBrand() ?></p>
+    <?php } ?>  
+    <?php if($product->hasType()) { ?>
+        <p class="card-text">Tipo: <?php echo $product->printType() ?></p>
+    <?php } ?>  
+    <?php if($product->hasColor()) { ?>
+        <p class="card-text">Colore: <?php echo $product->printColor() ?></p>
+    <?php } ?> 
+    
   </div>
 </div>
 <?php } ?>

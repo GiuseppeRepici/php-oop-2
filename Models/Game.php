@@ -12,4 +12,18 @@ class Game extends Product {
         $this->type = $_type;
         $this->brand = $_brand;
       }
+
+      public function hasBrand(){
+        return true;
+      }
+
+      public function printBrand() {
+        return "{$this->brand}";
+      }
+      public function hasType(){
+        return true;
+      }
+      public function printType() {
+        return "{$this->type}";
+      }
 }

@@ -21,5 +21,19 @@ class Product {
     return "{$this->price}" ;
   }
 
+  public function hasCalories(){
+    return false;
+  }
 
+  public function hasBrand(){
+    return false;
+  }
+
+  public function hasType(){
+    return false;
+  }
+
+  public function hasColor(){
+    return false;
+  }
 }
