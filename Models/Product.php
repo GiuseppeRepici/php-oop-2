@@ -36,4 +36,10 @@ class Product {
   public function hasColor(){
     return false;
   }
+
+  public function setPrice($_price) {
+    if (!is_int($_price)) {
+        throw new Exception("Price deve essere un numero");
+    }
+  }
 }
